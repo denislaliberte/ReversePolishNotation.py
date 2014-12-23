@@ -12,8 +12,7 @@ def ReversePolishNotation(input,stack = []):
   if head in op:
     operation = op[head]
     first,second,*rest =stack
-    result = operation(second,first)
-    rest.insert(0,result)
+    rest.insert(0, operation(second,first))
     return ReversePolishNotation(tail,rest)
   stack.insert(0,head)
   return ReversePolishNotation(tail,stack)
