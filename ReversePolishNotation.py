@@ -1,9 +1,9 @@
 import operator
 
-def ReversePolishNotation(input):
+def ReversePolishNotation(input,stack = []):
   op = {"+": operator.add,
         "*": operator.mul,
-        "/": operator.div,
+        "/": operator.truediv,
         "-": operator.sub}
   index = input[2]
   operation = op[index]
