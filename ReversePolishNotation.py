@@ -1,6 +1,9 @@
 import operator
 
 def ReversePolishNotation(input,stack = []):
+  if not input:
+    head, *tail = stack
+    return head
   op = {"+": operator.add,
         "*": operator.mul,
         "/": operator.truediv,
