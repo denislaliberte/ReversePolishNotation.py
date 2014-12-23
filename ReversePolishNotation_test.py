@@ -15,3 +15,8 @@ class ReversePolishNotation_test(unittest.TestCase):
   def test_division(self):
     rpn = ReversePolishNotation();
     self.assertEqual(rpn.compute([4,2,'/']),2)
+
+  def test_subtraction(self):
+    rpn = ReversePolishNotation();
+    self.assertEqual(rpn.compute([5,2,'-']),3)
+

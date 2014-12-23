@@ -3,7 +3,8 @@ import operator
 class ReversePolishNotation():
   op = {"+": operator.add,
         "*": operator.mul,
-        "/": operator.div}
+        "/": operator.div,
+        "-": operator.sub}
   def compute(self,input):
     qwer = input[2]
     asdf = self.op[qwer]
