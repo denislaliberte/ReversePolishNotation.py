@@ -8,6 +8,12 @@ def ReversePolishNotation(input,stack = []):
         "*": operator.mul,
         "/": operator.truediv,
         "-": operator.sub}
-  index = input[2]
-  operation = op[index]
-  return operation(input[0], input[1])
+  head, *tail = input
+  if head in op:
+    operation = op[head]
+    first,second,*rest =stack
+    result = operation(first,second)
+    rest.insert(0,result)
+    return ReversePolishNotation(tail,rest)
+  stack.insert(0,head)
+  return ReversePolishNotation(tail,stack)
