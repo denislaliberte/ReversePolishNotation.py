@@ -8,3 +8,6 @@ class ReversePolishNotation_test(unittest.TestCase):
     rpn = ReversePolishNotation();
     self.assertEqual(rpn.compute([1,1,'+']),2)
 
+  def test_multiplication(self):
+    rpn = ReversePolishNotation();
+    self.assertEqual(rpn.compute([2,3,'*']),6)
