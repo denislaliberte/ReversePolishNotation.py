@@ -22,4 +22,7 @@ class ReversePolishNotation_test(unittest.TestCase):
   def test_2_addition(self):
     self.assertEqual(ReversePolishNotation([4,5,2,'+','+']),11)
 
+  def test_plus_minus(self):
+    self.assertEqual(ReversePolishNotation([2, 2, "+", 1, "-"]),3)
+
 
