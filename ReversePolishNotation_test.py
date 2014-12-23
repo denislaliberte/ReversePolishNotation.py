@@ -24,5 +24,7 @@ class ReversePolishNotation_test(unittest.TestCase):
 
   def test_plus_minus(self):
     self.assertEqual(ReversePolishNotation([2, 2, "+", 1, "-"]),3)
-
+  
+  def complexe(self):
+    self.assertEqual(ReversePolishNotation([1, 2, "+", 4, "*", 5, "+", 3, "-"]),3)
 
