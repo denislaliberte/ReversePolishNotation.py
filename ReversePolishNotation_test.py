@@ -20,3 +20,6 @@ class ReversePolishNotation_test(unittest.TestCase):
     rpn = ReversePolishNotation();
     self.assertEqual(rpn.compute([5,2,'-']),3)
 
+#  def test_2_addition(self):
+#    rpn = ReversePolishNotation();
+#    self.assertEqual(rpn.compute([4,5,2,'+']),11)

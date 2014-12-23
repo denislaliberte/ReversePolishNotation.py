@@ -6,6 +6,6 @@ class ReversePolishNotation():
         "/": operator.div,
         "-": operator.sub}
   def compute(self,input):
-    qwer = input[2]
-    asdf = self.op[qwer]
-    return asdf(input[0], input[1])
+    index = input[2]
+    operation = self.op[index]
+    return operation(input[0], input[1])
